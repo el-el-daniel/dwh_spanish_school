@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    database: dwh_spanish_school
+    schema: raw
+    tables:
+      - name: courses
+      - name: enrollments
+      - name: lessons
+      - name: students
+      - name: subscriptions
