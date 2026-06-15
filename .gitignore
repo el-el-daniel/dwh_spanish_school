@@ -1,5 +1,7 @@
 .venv/
+.vscode
 logs/
 **/__pycache__/
 **/.env
 **/target/
+docker-compose.yml
