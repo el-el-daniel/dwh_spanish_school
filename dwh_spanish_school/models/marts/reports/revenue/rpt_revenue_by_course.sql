@@ -1,0 +1,1 @@
+{{ get_revenue_by(['course_id', 'level']) }}

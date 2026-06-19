@@ -9,7 +9,11 @@ select
     l.is_irregular_time,
     e.enrollment_date, 
     e.enrollment_status,
-    c.price
+    c.datefrom as course_datefrom,
+    c.dateto as course_dateto,
+    c.price,
+    c."level",    
+    c."type"
 from {{ ref('int_lessons') }} l
 join {{ ref('int_enrollments') }} e using (enrollment_id)
 join {{ ref('int_courses') }} c using (course_id)
