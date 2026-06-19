@@ -1,0 +1,1 @@
+{{ avg_rating_by(['student_id', 'student_name']) }}

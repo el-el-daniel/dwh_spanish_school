@@ -1,0 +1,1 @@
+{{ avg_rating_by(['year']) }}

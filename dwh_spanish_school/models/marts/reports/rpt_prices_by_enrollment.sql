@@ -5,6 +5,6 @@ select distinct
     "level",    
     "type",
     price,
-    extract(year from course_datefrom) as "year",
-    extract(month from lesson_date) as "month"
+    "year",
+    "month"
 from {{ ref('fct_lessons') }} l
